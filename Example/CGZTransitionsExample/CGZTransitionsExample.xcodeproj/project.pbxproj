@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E24BA1E193BE1CA0068261C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA1D193BE1CA0068261C /* Foundation.framework */; };
+		4E24BA20193BE1CA0068261C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA1F193BE1CA0068261C /* CoreGraphics.framework */; };
+		4E24BA22193BE1CA0068261C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA21193BE1CA0068261C /* UIKit.framework */; };
+		4E24BA28193BE1CA0068261C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E24BA26193BE1CA0068261C /* InfoPlist.strings */; };
+		4E24BA2A193BE1CA0068261C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA29193BE1CA0068261C /* main.m */; };
+		4E24BA2E193BE1CA0068261C /* CGZAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA2D193BE1CA0068261C /* CGZAppDelegate.m */; };
+		4E24BA31193BE1CA0068261C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E24BA2F193BE1CA0068261C /* Main.storyboard */; };
+		4E24BA36193BE1CA0068261C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E24BA35193BE1CA0068261C /* Images.xcassets */; };
+		4E24BA3D193BE1CA0068261C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA3C193BE1CA0068261C /* XCTest.framework */; };
+		4E24BA3E193BE1CA0068261C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA1D193BE1CA0068261C /* Foundation.framework */; };
+		4E24BA3F193BE1CA0068261C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E24BA21193BE1CA0068261C /* UIKit.framework */; };
+		4E24BA47193BE1CA0068261C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4E24BA45193BE1CA0068261C /* InfoPlist.strings */; };
+		4E24BA49193BE1CA0068261C /* CGZTransitionsExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA48193BE1CA0068261C /* CGZTransitionsExampleTests.m */; };
+		4E24BA54193BE2390068261C /* CGZDropAndRotateBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA53193BE2390068261C /* CGZDropAndRotateBehavior.m */; };
+		4E24BA57193BE2530068261C /* CGZDropAndRotateTransitionAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA56193BE2530068261C /* CGZDropAndRotateTransitionAnimator.m */; };
+		4E24BA5B193BE40D0068261C /* CGZViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA5A193BE40D0068261C /* CGZViewController.m */; };
+		4E24BA5E193BE4F10068261C /* CGZMessageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E24BA5D193BE4F10068261C /* CGZMessageViewController.m */; };
+		4EB4A4A31949871D0052344D /* background_cgz.png in Resources */ = {isa = PBXBuildFile; fileRef = 4EB4A4A21949871D0052344D /* background_cgz.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E24BA40193BE1CA0068261C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E24BA12193BE1CA0068261C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E24BA19193BE1CA0068261C;
+			remoteInfo = CGZTransitionsExample;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E24BA1A193BE1CA0068261C /* CGZTransitionsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGZTransitionsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E24BA1D193BE1CA0068261C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4E24BA1F193BE1CA0068261C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4E24BA21193BE1CA0068261C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4E24BA25193BE1CA0068261C /* CGZTransitionsExample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGZTransitionsExample-Info.plist"; sourceTree = "<group>"; };
+		4E24BA27193BE1CA0068261C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E24BA29193BE1CA0068261C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E24BA2B193BE1CA0068261C /* CGZTransitionsExample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGZTransitionsExample-Prefix.pch"; sourceTree = "<group>"; };
+		4E24BA2C193BE1CA0068261C /* CGZAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGZAppDelegate.h; sourceTree = "<group>"; };
+		4E24BA2D193BE1CA0068261C /* CGZAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGZAppDelegate.m; sourceTree = "<group>"; };
+		4E24BA30193BE1CA0068261C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E24BA35193BE1CA0068261C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4E24BA3B193BE1CA0068261C /* CGZTransitionsExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CGZTransitionsExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E24BA3C193BE1CA0068261C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		4E24BA44193BE1CA0068261C /* CGZTransitionsExampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CGZTransitionsExampleTests-Info.plist"; sourceTree = "<group>"; };
+		4E24BA46193BE1CA0068261C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4E24BA48193BE1CA0068261C /* CGZTransitionsExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGZTransitionsExampleTests.m; sourceTree = "<group>"; };
+		4E24BA52193BE22C0068261C /* CGZDropAndRotateBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGZDropAndRotateBehavior.h; path = ../../../CGZTransitions/CGZDropAndRotateBehavior.h; sourceTree = "<group>"; };
+		4E24BA53193BE2390068261C /* CGZDropAndRotateBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGZDropAndRotateBehavior.m; path = ../../../CGZTransitions/CGZDropAndRotateBehavior.m; sourceTree = "<group>"; };
+		4E24BA55193BE24B0068261C /* CGZDropAndRotateTransitionAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGZDropAndRotateTransitionAnimator.h; path = ../../../CGZTransitions/CGZDropAndRotateTransitionAnimator.h; sourceTree = "<group>"; };
+		4E24BA56193BE2530068261C /* CGZDropAndRotateTransitionAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CGZDropAndRotateTransitionAnimator.m; path = ../../../CGZTransitions/CGZDropAndRotateTransitionAnimator.m; sourceTree = "<group>"; };
+		4E24BA59193BE40D0068261C /* CGZViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGZViewController.h; sourceTree = "<group>"; };
+		4E24BA5A193BE40D0068261C /* CGZViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGZViewController.m; sourceTree = "<group>"; };
+		4E24BA5C193BE4F10068261C /* CGZMessageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGZMessageViewController.h; sourceTree = "<group>"; };
+		4E24BA5D193BE4F10068261C /* CGZMessageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGZMessageViewController.m; sourceTree = "<group>"; };
+		4EB4A4A21949871D0052344D /* background_cgz.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_cgz.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E24BA17193BE1CA0068261C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24BA20193BE1CA0068261C /* CoreGraphics.framework in Frameworks */,
+				4E24BA22193BE1CA0068261C /* UIKit.framework in Frameworks */,
+				4E24BA1E193BE1CA0068261C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E24BA38193BE1CA0068261C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24BA3D193BE1CA0068261C /* XCTest.framework in Frameworks */,
+				4E24BA3F193BE1CA0068261C /* UIKit.framework in Frameworks */,
+				4E24BA3E193BE1CA0068261C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E1B221B194CE38A00CB736D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4E1B221D194CE3AC00CB736D /* Images */,
+				4E1B221C194CE39600CB736D /* Storyboards */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		4E1B221C194CE39600CB736D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA2F193BE1CA0068261C /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		4E1B221D194CE3AC00CB736D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA35193BE1CA0068261C /* Images.xcassets */,
+				4EB4A4A21949871D0052344D /* background_cgz.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		4E24BA11193BE1CA0068261C = {
+			isa = PBXGroup;
+			children = (
+				4E24BA23193BE1CA0068261C /* CGZTransitionsExample */,
+				4E24BA42193BE1CA0068261C /* CGZTransitionsExampleTests */,
+				4E24BA1C193BE1CA0068261C /* Frameworks */,
+				4E24BA1B193BE1CA0068261C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E24BA1B193BE1CA0068261C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA1A193BE1CA0068261C /* CGZTransitionsExample.app */,
+				4E24BA3B193BE1CA0068261C /* CGZTransitionsExampleTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E24BA1C193BE1CA0068261C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA1D193BE1CA0068261C /* Foundation.framework */,
+				4E24BA1F193BE1CA0068261C /* CoreGraphics.framework */,
+				4E24BA21193BE1CA0068261C /* UIKit.framework */,
+				4E24BA3C193BE1CA0068261C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E24BA23193BE1CA0068261C /* CGZTransitionsExample */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA58193BE2610068261C /* CGZTransitions */,
+				4E24BA60193C00C60068261C /* View Controllers */,
+				4E24BA5F193C009D0068261C /* App Delegate */,
+				4E1B221B194CE38A00CB736D /* Resources */,
+				4E24BA24193BE1CA0068261C /* Supporting Files */,
+			);
+			path = CGZTransitionsExample;
+			sourceTree = "<group>";
+		};
+		4E24BA24193BE1CA0068261C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA25193BE1CA0068261C /* CGZTransitionsExample-Info.plist */,
+				4E24BA26193BE1CA0068261C /* InfoPlist.strings */,
+				4E24BA29193BE1CA0068261C /* main.m */,
+				4E24BA2B193BE1CA0068261C /* CGZTransitionsExample-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E24BA42193BE1CA0068261C /* CGZTransitionsExampleTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA48193BE1CA0068261C /* CGZTransitionsExampleTests.m */,
+				4E24BA43193BE1CA0068261C /* Supporting Files */,
+			);
+			path = CGZTransitionsExampleTests;
+			sourceTree = "<group>";
+		};
+		4E24BA43193BE1CA0068261C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA44193BE1CA0068261C /* CGZTransitionsExampleTests-Info.plist */,
+				4E24BA45193BE1CA0068261C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4E24BA58193BE2610068261C /* CGZTransitions */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA52193BE22C0068261C /* CGZDropAndRotateBehavior.h */,
+				4E24BA53193BE2390068261C /* CGZDropAndRotateBehavior.m */,
+				4E24BA55193BE24B0068261C /* CGZDropAndRotateTransitionAnimator.h */,
+				4E24BA56193BE2530068261C /* CGZDropAndRotateTransitionAnimator.m */,
+			);
+			name = CGZTransitions;
+			sourceTree = "<group>";
+		};
+		4E24BA5F193C009D0068261C /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA2C193BE1CA0068261C /* CGZAppDelegate.h */,
+				4E24BA2D193BE1CA0068261C /* CGZAppDelegate.m */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		4E24BA60193C00C60068261C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E24BA59193BE40D0068261C /* CGZViewController.h */,
+				4E24BA5A193BE40D0068261C /* CGZViewController.m */,
+				4E24BA5C193BE4F10068261C /* CGZMessageViewController.h */,
+				4E24BA5D193BE4F10068261C /* CGZMessageViewController.m */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E24BA19193BE1CA0068261C /* CGZTransitionsExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E24BA4C193BE1CA0068261C /* Build configuration list for PBXNativeTarget "CGZTransitionsExample" */;
+			buildPhases = (
+				4E24BA16193BE1CA0068261C /* Sources */,
+				4E24BA17193BE1CA0068261C /* Frameworks */,
+				4E24BA18193BE1CA0068261C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGZTransitionsExample;
+			productName = CGZTransitionsExample;
+			productReference = 4E24BA1A193BE1CA0068261C /* CGZTransitionsExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E24BA3A193BE1CA0068261C /* CGZTransitionsExampleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E24BA4F193BE1CA0068261C /* Build configuration list for PBXNativeTarget "CGZTransitionsExampleTests" */;
+			buildPhases = (
+				4E24BA37193BE1CA0068261C /* Sources */,
+				4E24BA38193BE1CA0068261C /* Frameworks */,
+				4E24BA39193BE1CA0068261C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E24BA41193BE1CA0068261C /* PBXTargetDependency */,
+			);
+			name = CGZTransitionsExampleTests;
+			productName = CGZTransitionsExampleTests;
+			productReference = 4E24BA3B193BE1CA0068261C /* CGZTransitionsExampleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E24BA12193BE1CA0068261C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CGZ;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = CarlosGz;
+				TargetAttributes = {
+					4E24BA3A193BE1CA0068261C = {
+						TestTargetID = 4E24BA19193BE1CA0068261C;
+					};
+				};
+			};
+			buildConfigurationList = 4E24BA15193BE1CA0068261C /* Build configuration list for PBXProject "CGZTransitionsExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E24BA11193BE1CA0068261C;
+			productRefGroup = 4E24BA1B193BE1CA0068261C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E24BA19193BE1CA0068261C /* CGZTransitionsExample */,
+				4E24BA3A193BE1CA0068261C /* CGZTransitionsExampleTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E24BA18193BE1CA0068261C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4EB4A4A31949871D0052344D /* background_cgz.png in Resources */,
+				4E24BA36193BE1CA0068261C /* Images.xcassets in Resources */,
+				4E24BA28193BE1CA0068261C /* InfoPlist.strings in Resources */,
+				4E24BA31193BE1CA0068261C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E24BA39193BE1CA0068261C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24BA47193BE1CA0068261C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E24BA16193BE1CA0068261C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24BA54193BE2390068261C /* CGZDropAndRotateBehavior.m in Sources */,
+				4E24BA5E193BE4F10068261C /* CGZMessageViewController.m in Sources */,
+				4E24BA2A193BE1CA0068261C /* main.m in Sources */,
+				4E24BA5B193BE40D0068261C /* CGZViewController.m in Sources */,
+				4E24BA2E193BE1CA0068261C /* CGZAppDelegate.m in Sources */,
+				4E24BA57193BE2530068261C /* CGZDropAndRotateTransitionAnimator.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E24BA37193BE1CA0068261C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E24BA49193BE1CA0068261C /* CGZTransitionsExampleTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E24BA41193BE1CA0068261C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E24BA19193BE1CA0068261C /* CGZTransitionsExample */;
+			targetProxy = 4E24BA40193BE1CA0068261C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E24BA26193BE1CA0068261C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E24BA27193BE1CA0068261C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		4E24BA2F193BE1CA0068261C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E24BA30193BE1CA0068261C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E24BA45193BE1CA0068261C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E24BA46193BE1CA0068261C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E24BA4A193BE1CA0068261C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E24BA4B193BE1CA0068261C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E24BA4D193BE1CA0068261C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGZTransitionsExample/CGZTransitionsExample-Prefix.pch";
+				INFOPLIST_FILE = "CGZTransitionsExample/CGZTransitionsExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4E24BA4E193BE1CA0068261C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGZTransitionsExample/CGZTransitionsExample-Prefix.pch";
+				INFOPLIST_FILE = "CGZTransitionsExample/CGZTransitionsExample-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		4E24BA50193BE1CA0068261C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CGZTransitionsExample.app/CGZTransitionsExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGZTransitionsExample/CGZTransitionsExample-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "CGZTransitionsExampleTests/CGZTransitionsExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		4E24BA51193BE1CA0068261C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CGZTransitionsExample.app/CGZTransitionsExample";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CGZTransitionsExample/CGZTransitionsExample-Prefix.pch";
+				INFOPLIST_FILE = "CGZTransitionsExampleTests/CGZTransitionsExampleTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E24BA15193BE1CA0068261C /* Build configuration list for PBXProject "CGZTransitionsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E24BA4A193BE1CA0068261C /* Debug */,
+				4E24BA4B193BE1CA0068261C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E24BA4C193BE1CA0068261C /* Build configuration list for PBXNativeTarget "CGZTransitionsExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E24BA4D193BE1CA0068261C /* Debug */,
+				4E24BA4E193BE1CA0068261C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E24BA4F193BE1CA0068261C /* Build configuration list for PBXNativeTarget "CGZTransitionsExampleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E24BA50193BE1CA0068261C /* Debug */,
+				4E24BA51193BE1CA0068261C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E24BA12193BE1CA0068261C /* Project object */;
+}
